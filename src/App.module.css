@@ -1,0 +1,304 @@
+/* Over All CSS */
+
+
+body {
+  overflow: hidden;
+  /* background-image: url('./original.gif'); */
+  /* background:linear-gradient(#071236,rgb(28, 202, 255)); */
+  background-color:#3586ff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+}
+.Loading{
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0,#ff7b7b);
+  animation:animate 2.0s linear infinite;
+}
+.Loading span{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:linear-gradient(#14ffe9,#ffeb3b,#ff00e0,#ff7b7b);
+}
+.Loading span:nth-child(1){
+  filter:blur(5px)
+}
+.Loading span:nth-child(2){
+  filter:blur(10px)
+}
+.Loading span:nth-child(3){
+  filter:blur(50px)
+}
+.Loading span:nth-child(4){
+  filter:blur(100px)
+}
+.Loading:after{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #04025f;
+  border-radius: 50%;
+}
+@keyframes animate{
+0%{
+  transform: rotate(0deg);
+
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+.Logo{
+  height: 400px;
+  width: 700px;
+  margin-top: 50px;
+  /* border:2px solid white; */
+  /* background-image: url('./original.gif'); */
+  /* padding:; */
+  /* padding:100px; */
+  color:white;
+  font-size: 25px;
+  font-weight: 500;
+}
+p{
+  color: rgb(13, 40, 161);
+  font-size: 35px;
+  font-weight: 600;
+  /* margin:auto; */
+  align-items: center;
+  margin-left: 50px;
+}
+.MusicBar{
+  /* position: absolute; */
+  width:100px;
+  height:50px;
+  max-height: 300px;
+  /* background-color:rgb(28, 202, 255); */
+  background-color: white;
+  display: inline-block;
+  /* margin-left: 1px; */
+  margin-top:300px;
+  /* filter:contrast(1100px) */
+}
+.MusicBar2{
+  /* position: absolute; */
+  width:100px;
+  height:50px;
+  max-height: 300px;
+  background-color:white;
+  display: inline-block;
+  margin-left: 3px;
+  position:fixed;
+  margin-top:300px;
+  /* filter:contrast(1100px) */
+}
+.MusicBar3{
+  /* position: absolute; */
+  width:100px;
+  height:50px;
+  max-height: 300px;
+  background-color:white;
+  /* box-shadow:-5px -5px 20px 5px white; */
+  display: inline-block;
+  margin-left: 106px;
+  position:fixed;
+  margin-top:300px;
+  /* filter:contrast(1100px) */
+}.MusicBar4{
+  /* position: absolute; */
+  width:100px;
+  height:50px;
+  max-height: 300px;
+  background-color:white;
+  display: inline-block;
+  
+  margin-left: 209px;
+  position:fixed;
+  margin-top:300px;
+  /* filter:contrast(1100px) */
+}.MusicBar5{
+  /* position: absolute; */
+  width:100px;
+  height:50px;
+  max-height: 300px;
+  background-color:white;
+  display: inline-block;
+  margin-left: 312px;
+  position:fixed;
+  margin-top:300px;
+  animation: anim-glow 0.6s ease infinite;
+  /* filter:contrast(1100px) */
+}
+.EqualizerBox{
+  margin: auto;
+  /* margin-top:-100px; */
+  height:320px;
+  width:550px;
+  /* border: 2px solid white; */
+}
+.MusicPlayer{
+  width: 90%;
+  height:auto;
+  margin: auto;
+  padding: 20px;
+  /* border: 2px solid white; */
+  align-items: center;
+  justify-content: center;
+
+}
+.PlayButton{
+  margin-left:10px ;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #514153;
+  display: inline-block;
+  color: white;
+  font-size: 45px;
+  box-shadow: 0px 0px 20px 0px rgb(28, 202, 255);
+  text-align: center;
+  justify-content: center;
+}
+.ForwardButton{
+  margin-left:10px ;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 0px white;
+}.BackwardButton{
+  margin-left:10px ;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-block;
+  
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px white;
+  justify-content: center;
+}
+.CurrentMusic{
+  margin-left: 10px;
+  display: inline-block;
+  color: white;
+  margin-top: 10px;
+}
+.MusicPlayButtonContainer{
+  justify-content: center;
+  width:350px;
+  height:auto;
+  /* border: 2px solid white; */
+  margin: auto;
+  align-items: center;
+}
+@keyframes anim-glow {
+	0% {
+		box-shadow: 0 0 rgba(#61EF61, 1);
+	}
+	100% {
+		box-shadow: 0 0 10px 8px transparent;
+		border-width: 2px;
+	}
+}
+.Footer{
+  height: 100px;
+  width: 100%;
+  /* background-color: white; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+.Header{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.AppLogo{
+width: 45px;
+margin: auto;
+}
+.WaveEffects1{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url(./wave.png);
+  background-size: 1000px 100px;
+animation:animate 15s linear infinite
+}
+.WaveEffects2{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url(./wave.png);
+  background-size: 1000px 100px;
+animation:animate2 20s linear infinite
+}
+.WaveEffects3{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url(./wave.png);
+  background-size: 1000px 100px;
+animation:animate3 10s linear infinite
+}
+@keyframes animate{
+  0%{
+background-position-x:0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate3{
+  0%{
+background-position-x:0;
+opacity:0.1
+  }
+  100%{
+    background-position-x: -1000px;
+    opacity: 0.1;
+  }
+}
+@keyframes animate2{
+  0%{
+background-position-x:0;
+opacity: 0.6;
+  }
+  100%{
+    background-position-x: -1000px;
+    opacity: 0.6;
+  }
+}
